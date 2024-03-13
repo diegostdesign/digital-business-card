@@ -1,0 +1,159 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --background: #23252C;
+    --card-background: #F5F5F5;
+    --footer-background: #D5D4D8;
+    --footer-icon: #918E9B;
+    --text: #2B283A;
+    --accent: #F47D27;
+    --linkedin: #297FE5;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--background);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+.card--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--card-background);
+    width: 317px;
+    border-radius: 10px;
+}
+
+.card--cover{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.header--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer--container{
+    height: 64px;
+    background-color: var(--footer-background);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.footer--list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 24px;
+}
+.footer--list i{
+    color: var(--footer-icon);
+    font-size: 25px;
+}
+
+.header--heading,
+.header--site,
+.main--container{
+    color: var(--text);
+}
+
+.header--heading{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.header--work{
+    color: var(--accent);
+    font-size: 12px;
+    margin: 7px 0;
+}
+
+.header--site{
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+
+.header--buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.header--button{
+    width: 115px;
+    height: 34px;
+    cursor: pointer;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    gap: 8px;
+}
+
+.main--container,
+.header--buttons{
+    padding: 0 35px;
+}
+
+.mail--button{
+    background-color: white;
+    color: #374151;
+}
+
+.linkedin--button{
+    background-color: var(--linkedin);
+    color: white;
+}
+
+.general--heading{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.general--paragraph{
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.about--heading{
+    margin-top: 25px;
+}
+
+.interests--heading{
+    margin-top: 27px;
+}
+
+.interests--paragraph{
+    margin-bottom: 31px;
+}
+
+.header--button_image{
+    margin-right: 8px;
+}
